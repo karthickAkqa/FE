@@ -59,7 +59,7 @@ $(document).ready(function () {
     scrollTrigger: {
       trigger: ".scrollwrap",
       start: "top top",
-      end: "+=1000px",
+      // end: "+=1000px",
       pin: true,
       scrub: true,
     },
@@ -75,7 +75,7 @@ $(document).ready(function () {
     scrollTrigger: {
       trigger: ".scrollwrap",
       start: "top top",
-      end: "+=1000px",
+      // end: "+=1000px",
       // pin: true,
       scrub: true,
     },
