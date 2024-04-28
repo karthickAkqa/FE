@@ -1,0 +1,130 @@
+/* Fonts ============= */
+@font-face {
+    font-family: 'ManifaPro2-Regular';
+    src: url('../fonts/ManifaPro2-Regular.otf') format('opentype');
+    src: url('../fonts/ManifaPro2-Regular.eot');
+    src: url('../fonts/ManifaPro2-Regular.woff') format('woff'),
+        url('../fonts/ManifaPro2-Regular.woff2') format('woff2'),
+        url('../fonts/ManifaPro2-Regular.ttf') format('truetype');
+    font-display: swap;
+}
+
+/* Default styles ============= */
+body,
+html {
+    height: 100%;
+
+}
+
+body {
+    font-size: $h4;
+    margin: 0;
+    padding: 0 0 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+
+    &.fixed-header {
+        header {
+            -webkit-transition: all 0.2s ease;
+            -moz-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+
+            .navbar-brand {
+                width: 45px;
+            }
+
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+a:focus,
+.btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+
+    li {
+        list-style: none;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 $spc_50;
+    z-index: 9;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+
+    .navbar-brand {
+        width: 90px;
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        transition: all 0.2s ease;
+    }
+}
+
+
+.navbar-nav {
+    .show {
+        >.nav-link {
+            color: $themeColor;
+        }
+    }
+
+    .nav-link.active {
+        color: $themeColor;
+    }
+
+    .nav-link {
+        color: $white;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px) {
+
+    .navbar-toggler {
+        background: $white;
+    }
+}
+
+
+@media only screen and (min-width: 250px) and (max-width: 767px) {
+    header {
+        padding: 0 $spc_25;
+    }
+
+    .navbar-toggler {
+        background: $white;
+    }
+}
